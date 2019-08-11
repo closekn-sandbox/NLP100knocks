@@ -1,7 +1,6 @@
 str1 = "パトカー"
 str2 = "タクシー"
 
-for i = 1:3:10
-  print(str1[i] * str2[i])
-end
-println()
+str = string(( a * b for (a, b) in zip(str1, str2))... )
+
+println(str)
