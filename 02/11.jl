@@ -1,4 +1,4 @@
-f = open("hightemp.txt")
+f = open("./data/hightemp.txt")
 for line in readlines(f)
   replace(line, "\t"　=>　" ")
   println(line)
@@ -6,5 +6,5 @@ end
 close(f)
 
 #=
-$ cat hightemp.txt | sed s/$'\t'/' '/g
+$ cat ./data/hightemp.txt | sed s/$'\t'/' '/g
 =#

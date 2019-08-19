@@ -1,7 +1,7 @@
-f = open("hightemp.txt")
+f = open("./data/hightemp.txt")
 println(countlines(f))
 close(f)
 
 #= Unix
-$ wc -l hightemp.txt
+$ wc -l ./data/hightemp.txt
 =#
