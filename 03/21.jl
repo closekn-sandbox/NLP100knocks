@@ -12,4 +12,10 @@ for l in eachline(wikidata)
     break
   end
 end
-print(txt)
+
+match_arr = eachmatch(r"(\[\[Category:.*\]\]\n?)", txt)
+category_line = map(m->m.captures[1], match_arr)
+
+for l in category_line
+  print(l)
+end
